@@ -1,6 +1,6 @@
 # A System for Student Registration
 
-A system for student registration and attendance management. This is the front-end application for the system, developed using ReactJS.
+A system for student registration and attendance management. This is the front-end application for the system, developed using ReactJS.  
 Lecturers and students can use this system for automating the attendance management process. 
 Uses face recognition for student identification and attendance management. 
 Alternatively, fingerprint recognition and student ID barcode scanning can be used for student identification and attendance management. 
