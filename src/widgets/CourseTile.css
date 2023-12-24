@@ -6,4 +6,14 @@
     background-color: #288BEF; /* #ef8b28 */
 }
 
+.tile-text {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5em;
+}
 
+.tile-text:hover {
+    color: #fff;
+}
