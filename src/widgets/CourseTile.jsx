@@ -8,9 +8,9 @@ CourseTile.propTypes = {
 
 function CourseTile({ courseCode, academicYear }) {
     return (
-        <div className="course-tile">
-            <h2>{courseCode}</h2>
-            <p>{academicYear}</p>
+        <div className="w-64 h-64 border-2 border-black flex flex-col justify-center items-center m-4">
+            <h2 className="text-2xl">{courseCode}</h2>
+            <p className="text-lg">{academicYear}</p>
         </div>
     );
 }
