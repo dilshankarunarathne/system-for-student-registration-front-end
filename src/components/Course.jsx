@@ -5,7 +5,15 @@ import './Course.css';
 const Course = () => {
   const { id } = useParams();
 
-  
+  const students = [
+    { id: 1, registration_number: 'CS101', name: '2021-2022' },
+    { id: 2, registration_number: 'CS102', name: '2021-2022' },
+    { id: 3, registration_number: 'CS103', name: '2021-2022' },
+    { id: 4, registration_number: 'CS104', name: '2021-2022' },
+    { id: 5, registration_number: 'CS105', name: '2021-2022' },
+    { id: 6, registration_number: 'CS106', name: '2021-2022' },
+    { id: 7, registration_number: 'CS107', name: '2021-2022' },
+  ];
 
   return (
     <div>
