@@ -26,4 +26,5 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: baseline;
+    padding: 10px 30px 10px 30px;
 }
