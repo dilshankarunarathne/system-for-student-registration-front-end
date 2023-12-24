@@ -1,5 +1,7 @@
 import CourseTile from '../widgets/CourseTile';
 
+import './Dashboard.css';
+
 const Dashboard = () => {
   const courses = [
     { courseCode: 'CS101', academicYear: '2021-2022' },
