@@ -1,9 +1,9 @@
 .tile {
-    background-color: #288BEF; /* #ef8b28 */
+    background-color: #1f4c94; /* #ef8b28 */
 }
 
 .tile:hover {
-    background-color: #288BEF; /* #ef8b28 */
+    background-color: #288BEF; 
 }
 
 .tile-text {
