@@ -2,13 +2,13 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #202d42;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #4d73b0;
 }
 
 .text-course-info {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #91b0e3;
 }
