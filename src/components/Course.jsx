@@ -28,7 +28,8 @@ const Course = () => {
             </form>
         </div>
 
-        
+        <div className='flex flex-wrap justify-center items-start student-tiles'>
+        </div>
     </div>
   );
 };
