@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center bg-blue-500 p-6">
+    <nav className="flex justify-between items-center bg-blue-500 p-6 navbar">
       <div className="text-white text-2xl">Student Registration System</div>
       <div>
         <Link to="/dashboard" className="text-white mx-2">Dashboard</Link>
