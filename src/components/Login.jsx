@@ -19,7 +19,7 @@ const Login = () => {
     };
 
     return (
-        <div>
+        <div className='flex flex-wrap justify-center items-start h-screen p-4'>
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <div>
