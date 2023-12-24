@@ -3,6 +3,7 @@ import './StudentTile.css';
 
 CourseTile.propTypes = {
     id: PropTypes.string.isRequired,
+    name : PropTypes.string.isRequired,
 };
 
 function CourseTile({ id }) {
