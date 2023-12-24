@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 import CourseTile from '../widgets/CourseTile';
 
@@ -19,8 +19,10 @@ const Dashboard = () => {
     <div className='flex flex-wrap justify-center items-start main'>
 		<h1 className="text-3xl font-bold title">Courses</h1>
 		<div className="flex flex-wrap justify-center h-screen p-4 courses">
-			{courses.map((course, index) => (
-				<CourseTile key={index} courseCode={course.courseCode} academicYear={course.academicYear} />
+			{courses.map((course) => (
+				<Link to={`/course/${course.id}`} key={course.id}>
+					<CourseTile courseCode={course.courseCode} academicYear={course.academicYear} />
+				</Link>
 			))}
         </div>
     </div>
