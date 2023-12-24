@@ -35,5 +35,6 @@
 }
 
 .student-data {
-    width: 80%;
+    width: 80vw !important;
+    height: 40vh;
 }
