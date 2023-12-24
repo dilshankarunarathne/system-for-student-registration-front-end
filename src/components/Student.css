@@ -37,6 +37,10 @@
 .student-data {
     width: 80vw !important;
     height: 40vh;
+    display: flex !important;
+    flex-wrap: nowrap;
+    flex-direction: row !important;
+    justify-content: space-around !important;
 }
 
 .student-data-table {
