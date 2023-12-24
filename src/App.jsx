@@ -5,6 +5,7 @@ import './App.css';
 import Login from './components/Login';
 import Register from './components/Register';
 import Dashboard from './components/Dashboard';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
