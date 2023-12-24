@@ -5,6 +5,8 @@ import './Course.css';
 const Course = () => {
   const { id } = useParams();
 
+  
+
   return (
     <div>
         <div className="text-3xl font-bold course-info">
