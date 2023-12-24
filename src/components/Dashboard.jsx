@@ -1,4 +1,4 @@
-import CourseTile from './CourseTile';
+import CourseTile from '../widgets/CourseTile';
 
 const Dashboard = () => {
   const courses = [
