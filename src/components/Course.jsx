@@ -7,6 +7,7 @@ const Course = () => {
     <div>
         <div className="text-3xl font-bold course-info">
             <h1>Course {id}</h1>
+            <h2>Course Code: CS101</h2>
         </div>
     </div>
   );
