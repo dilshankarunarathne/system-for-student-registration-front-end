@@ -27,6 +27,8 @@ const Course = () => {
                 </div>
             </form>
         </div>
+
+        
     </div>
   );
 };
