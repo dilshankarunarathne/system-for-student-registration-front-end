@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   return (
     <div className='flex flex-wrap justify-center items-start main'>
-		<h1 className="text-3xl font-bold">Courses</h1>
+		<h1 className="text-3xl font-bold title">Courses</h1>
 		<div className="flex flex-wrap justify-center h-screen p-4 courses">
 			{courses.map((course, index) => (
 				<CourseTile key={index} courseCode={course.courseCode} academicYear={course.academicYear} />
