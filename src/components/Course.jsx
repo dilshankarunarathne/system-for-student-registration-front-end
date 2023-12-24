@@ -23,7 +23,7 @@ const Course = () => {
                 </div>
                 <div className='flex flex-wrap justify-center items-start login-form-half'>
                     <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content'>Login</button>
-                    <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg'>Register</button>
+                    <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content'>Register</button>
                 </div>
             </form>
         </div>
