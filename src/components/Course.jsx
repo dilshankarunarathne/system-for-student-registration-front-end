@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 
-
+import StudentTile from '../widgets/StudentTile';
 
 import './Course.css';
 
