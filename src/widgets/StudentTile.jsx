@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './StudentTile.css';
 
 CourseTile.propTypes = {
-    id: PropTypes.string.isRequired,
+    registration_number: PropTypes.string.isRequired,
     name : PropTypes.string.isRequired,
 };
 
