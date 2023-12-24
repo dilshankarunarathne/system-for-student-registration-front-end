@@ -10,8 +10,8 @@ const Course = () => {
     { registration_number: 'EUTC/2019/COM/25', name: 'Jane Doe' },
     { registration_number: 'EUTC/2019/COM/26', name: 'John Smith' },
     { registration_number: 'EUTC/2019/COM/27', name: 'Jane Smith' },
-    { registration_number: 'EUTC/2019/COM/28', name: 'John Doe' },
-    { registration_number: 'EUTC/2019/COM/29', name: 'Jane Doe' },
+    { registration_number: 'EUTC/2019/COM/28', name: 'Simon Doe' },
+    { registration_number: 'EUTC/2019/COM/29', name: 'Karen Doe' },
   ];
 
   return (
