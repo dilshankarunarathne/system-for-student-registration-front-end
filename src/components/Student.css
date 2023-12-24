@@ -1,0 +1,35 @@
+.student-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #202d42;
+    border-radius: 5px;
+    background-color: #4d73b0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+}
+
+.text-student-info {
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #91b0e3; */
+}
+
+.student-login-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.student-form-half {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    padding: 10px 30px 10px 30px;
+}
+
+.student-form-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
