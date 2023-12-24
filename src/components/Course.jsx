@@ -8,12 +8,12 @@ const Course = () => {
   const { id } = useParams();
 
   const students = [
-    { registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
-    { registration_number: 'EUTC/2019/COM/25', name: 'Jane Doe' },
-    { registration_number: 'EUTC/2019/COM/26', name: 'John Smith' },
-    { registration_number: 'EUTC/2019/COM/27', name: 'Jane Smith' },
-    { registration_number: 'EUTC/2019/COM/28', name: 'Simon Doe' },
-    { registration_number: 'EUTC/2019/COM/29', name: 'Karen Doe' },
+    { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
+    { id: 2, registration_number: 'EUTC/2019/COM/10', name: 'Jane Doe' },
+    { id: 3, registration_number: 'EUTC/2019/COM/60', name: 'John Smith' },
+    { id: 4, registration_number: 'EUTC/2019/COM/74', name: 'Jane Smith' },
+    { id: 5, registration_number: 'EUTC/2019/COM/57', name: 'Simon Doe' },
+    { id: 6, registration_number: 'EUTC/2019/COM/63', name: 'Karen Doe' },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Course = () => {
         <div className='flex flex-wrap justify-center items-start student-tiles'>
             {students.map((student) => (
 				<Link to={`/student/${student.id}`} key={student.id}>
-					<StudentTile courseCode={student.registration_number} academicYear={student.name} />
+					<StudentTile registration_number={student.registration_number} name={student.name} />
 				</Link>
 			))}
         </div>
