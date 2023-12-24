@@ -1,6 +1,8 @@
 const Dashboard = () => {
     return (
-        <h1 className="text-3xl font-bold underline">Dashboard</h1>
+        <div className="flex flex-col items-center justify-center h-screen bg-gray-200">
+            
+        </div>
     );
 };
 
