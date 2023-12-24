@@ -5,7 +5,9 @@ const Course = () => {
 
   return (
     <div>
-      <h1>Course ID: {id}</h1>
+        <div className="text-3xl font-bold course-info">
+            <h1>Course {id}</h1>
+        </div>
     </div>
   );
 };
