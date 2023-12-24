@@ -1,9 +1,16 @@
 .main {
-    
+
 }
 
 
 .courses {
     height: fit-content !important;
     background-color: #739feb;
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
