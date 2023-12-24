@@ -16,9 +16,11 @@ const Course = () => {
 
         <div className='flex flex-wrap justify-center items-start lecturer-login-form'>
             <form className='flex flex-wrap justify-center items-start'>
-                <h3 className='text-2xl font-bold'>Lecturer Login</h3>
-                <input type='text' placeholder='Username' className='p-2 m-2 border-2 rounded-lg' />
-                <input type='password' placeholder='Password' className='p-2 m-2 border-2 rounded-lg' />
+                <div className='flex flex-wrap justify-center items-start left-half'>
+                    <h3 className='text-2xl font-bold'>Lecturer Login</h3>
+                    <input type='text' placeholder='Username' className='p-2 m-2 border-2 rounded-lg' />
+                    <input type='password' placeholder='Password' className='p-2 m-2 border-2 rounded-lg' />
+                </div>
                 <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg'>Login</button>
                 <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg'>Register</button>
             </form>
