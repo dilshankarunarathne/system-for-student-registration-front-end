@@ -29,9 +29,9 @@ const Student = () => {
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-data'>
-            <div className='flex flex-wrap justify-center items-start student-data-pie'>
-            </div>
             <div className='flex flex-wrap justify-center items-start student-data-table'>
+            </div>
+            <div className='flex flex-wrap justify-center items-start student-data-pie'>
             </div>
         </div>
     </div>
