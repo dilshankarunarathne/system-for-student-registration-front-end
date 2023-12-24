@@ -10,36 +10,38 @@ const Register = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                Name:
-                <input
-                    type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-            </label>
-            <br />
-            <label>
-                Email:
-                <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-            </label>
-            <br />
-            <label>
-                Password:
-                <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-            </label>
-            <br />
-            <button type="submit">Register</button>
-        </form>
+        <div className='flex flex-wrap justify-center items-start h-screen p-4'>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Name:
+                    <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                </label>
+                <br />
+                <label>
+                    Email:
+                    <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </label>
+                <br />
+                <label>
+                    Password:
+                    <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </label>
+                <br />
+                <button type="submit">Register</button>
+            </form>
+        </div>
     );
 };
 
