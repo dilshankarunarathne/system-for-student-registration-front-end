@@ -79,8 +79,8 @@ const Student = () => {
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-data'>
-            <div className='flex flex-wrap justify-center items-start student-data-table'>
-                <table className="table-auto border-collapse border solid-black-3">
+            <div className='flex flex-wrap justify-center items-start student-data-table-container'>
+                <table className="table-auto border-collapse border solid-black-3 student-data-table">
                     <thead>
                         <tr>
                             <th className="solid-black-3 px-4 py-2 ">Date</th>
