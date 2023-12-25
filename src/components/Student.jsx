@@ -56,6 +56,10 @@ const Student = () => {
     },
   ];
 
+    const handleLogin = () => {
+        history.push(`/MarkAttendance/${id}`);
+    };
+
   return (
     <div>
         <div className="text-3xl font-bold student-info">
