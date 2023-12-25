@@ -15,7 +15,7 @@ const MarkAttendance = () => {
         </div>
 
         <div className='flex justify-center camera-container'>
-
+          
         </div>
     </div>
   );
