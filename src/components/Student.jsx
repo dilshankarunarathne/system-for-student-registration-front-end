@@ -78,7 +78,7 @@ const Student = () => {
 
         <div className='flex flex-wrap justify-center items-start student-data'>
             <div className='flex flex-wrap justify-center items-start student-data-table'>
-                <table className="table-auto border-collapse border border-green-800">
+                <table className="table-auto border-collapse border border-black attendance-table">
                     <thead>
                         <tr>
                             <th className="border border-black px-4 py-2 text-green-700">Date</th>
