@@ -14,7 +14,9 @@ const MarkAttendance = () => {
             <h2 className='text-course-info'>GPA: {id}</h2>
         </div>
 
-        
+        <div className='flex justify-center camera-container'>
+
+        </div>
     </div>
   );
 };
