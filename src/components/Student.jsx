@@ -109,6 +109,15 @@ const Student = () => {
                             hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
                         }]
                     }}
+                    options={{
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: 'black'
+                                }
+                            }
+                        }
+                    }}
                 />
             </div>
         </div>
