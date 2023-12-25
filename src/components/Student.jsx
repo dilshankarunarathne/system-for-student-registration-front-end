@@ -1,4 +1,4 @@
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 
@@ -6,7 +6,7 @@ import './Student.css';
 
 const Student = () => {
   const { id } = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const attendanceData = [
     {
@@ -57,7 +57,7 @@ const Student = () => {
   ];
 
     const handleLogin = () => {
-        history.push(`/MarkAttendance/${id}`);
+        navigate(`/MarkAttendance/${id}`);
     };
 
   return (
