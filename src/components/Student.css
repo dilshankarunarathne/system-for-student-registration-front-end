@@ -58,7 +58,7 @@
 }
 
 .attendance-table {
-    
+    border: 3px solid black !important;
 }
 
 .student-data-stats {
