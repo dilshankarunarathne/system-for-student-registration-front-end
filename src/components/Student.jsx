@@ -57,7 +57,7 @@ const Student = () => {
   ];
 
     const handleLogin = () => {
-        navigate(`/MarkAttendance/${id}`);
+        navigate(`/mark-attendance/${id}`);
     };
 
   return (
