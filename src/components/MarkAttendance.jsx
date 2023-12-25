@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-
+import Webcam from "react-webcam";
 
 import './MarkAttendance.css';
 
