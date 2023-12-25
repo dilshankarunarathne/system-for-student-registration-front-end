@@ -45,7 +45,8 @@
 
 .student-data-table {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    padding: 30px;
     border: 1px solid #202d42;
     border-radius: 5px;
     background-color: #4d73b0;
