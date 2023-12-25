@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 
+
 import './MarkAttendance.css';
 
 const MarkAttendance = () => {
@@ -15,7 +16,7 @@ const MarkAttendance = () => {
         </div>
 
         <div className='flex justify-center camera-container'>
-          
+
         </div>
     </div>
   );
