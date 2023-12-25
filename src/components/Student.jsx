@@ -30,7 +30,18 @@ const Student = () => {
 
         <div className='flex flex-wrap justify-center items-start student-data'>
             <div className='flex flex-wrap justify-center items-start student-data-table'>
-                
+                <table className="table-auto border-collapse border border-green-800">
+                    <thead>
+                        <tr>
+                            <th className="border border-green-600 px-4 py-2 text-green-700">Date</th>
+                            <th className="border border-green-600 px-4 py-2 text-green-700">Time</th>
+                            <th className="border border-green-600 px-4 py-2 text-green-700">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {/* You can map over your data and create a <tr> for each item */}
+                    </tbody>
+                </table>
             </div>
             <div className='flex flex-wrap justify-center items-start student-data-stats'>
                 
