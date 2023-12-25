@@ -78,12 +78,12 @@ const Student = () => {
 
         <div className='flex flex-wrap justify-center items-start student-data'>
             <div className='flex flex-wrap justify-center items-start student-data-table'>
-                <table className="table-auto border-collapse border border-black attendance-table">
+                <table className="table-auto border-collapse border border-black solid-black-3">
                     <thead>
                         <tr>
-                            <th className="border border-black px-4 py-2 text-green-700">Date</th>
-                            <th className="border border-black px-4 py-2 text-green-700">Time</th>
-                            <th className="border border-black px-4 py-2 text-green-700">Duration</th>
+                            <th className="solid-black-3 border-black px-4 py-2 text-green-700">Date</th>
+                            <th className="solid-black-3 border-black px-4 py-2 text-green-700">Time</th>
+                            <th className="solid-black-3 border-black px-4 py-2 text-green-700">Duration</th>
                         </tr>
                     </thead>
                     <tbody>
