@@ -71,9 +71,9 @@ const Student = () => {
                     <input type='text' placeholder='Username' className='p-2 m-2 border-2 rounded-lg login-form-content' />
                     <input type='password' placeholder='Password' className='p-2 m-2 border-2 rounded-lg login-form-content' />
                 </div>
-                <div className='flex flex-wrap justify-center items-start login-form-half'>
+                <div className='flex flex-wrap justify-center items-start login-form-half buttons'>
                     <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content'>Login</button>
-                    <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content buttons'>Register</button>
+                    <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content'>Register</button>
                 </div>
             </form>
         </div>
