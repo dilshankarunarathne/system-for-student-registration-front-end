@@ -81,17 +81,17 @@ const Student = () => {
                 <table className="table-auto border-collapse border solid-black-3">
                     <thead>
                         <tr>
-                            <th className="solid-black-3 px-4 py-2 text-green-700">Date</th>
-                            <th className="solid-black-3 px-4 py-2 text-green-700">Time</th>
-                            <th className="solid-black-3 px-4 py-2 text-green-700">Duration</th>
+                            <th className="solid-black-3 px-4 py-2 ">Date</th>
+                            <th className="solid-black-3 px-4 py-2 ">Time</th>
+                            <th className="solid-black-3 px-4 py-2 ">Duration</th>
                         </tr>
                     </thead>
                     <tbody>
                         {attendanceData.map((data, index) => (
                             <tr key={index}>
-                                <td className="solid-black-3 px-4 py-2 text-green-700">{data.date}</td>
-                                <td className="solid-black-3 px-4 py-2 text-green-700">{data.time}</td>
-                                <td className="solid-black-3 px-4 py-2 text-green-700">{data.duration}</td>
+                                <td className="solid-black-3 px-4 py-2 ">{data.date}</td>
+                                <td className="solid-black-3 px-4 py-2 ">{data.time}</td>
+                                <td className="solid-black-3 px-4 py-2 ">{data.duration}</td>
                             </tr>
                         ))}
                     </tbody>
