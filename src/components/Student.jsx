@@ -6,6 +6,7 @@ import './Student.css';
 
 const Student = () => {
   const { id } = useParams();
+  const history = useHistory();
 
   const attendanceData = [
     {
