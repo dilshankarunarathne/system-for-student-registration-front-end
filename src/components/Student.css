@@ -41,20 +41,26 @@
     flex-wrap: nowrap;
     flex-direction: row !important;
     justify-content: space-around !important;
+    margin-bottom: 20px;
 }
 
 .student-data-table {
-    /* width: 100%; */
-    /* height: 100%; */
+    height: 100%;
+    table-layout:fixed;
+}
+
+.student-data-table-container {
+    width: 35vw !important;
+    height: 38vw !important;
     padding: 30px;
     border: 1px solid #202d42;
     border-radius: 5px;
     background-color: #4d73b0;
-    color: #fff;
+    color: #cfcfcf;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    overflow: auto;
+    overflow: auto !important;
 }
 
 .solid-black-3 {
@@ -62,8 +68,8 @@
 }
 
 .student-data-stats {
-    width: 500px;
-    /* height: 300px; */
+    width: 35vw !important;
+    height: 38vw;
     border: 1px solid #202d42;
     border-radius: 5px;
     background-color: #4d73b0;
@@ -71,6 +77,5 @@
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    overflow: auto;
     padding: 30px 10px 30px 10px;
 }
