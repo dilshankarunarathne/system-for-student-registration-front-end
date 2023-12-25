@@ -5,6 +5,54 @@ import './Student.css';
 const Student = () => {
   const { id } = useParams();
 
+  const attendanceData = [
+    {
+      date: '2021-04-01',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-02',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-03',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-04',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-05',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-06',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-07',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-08',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+    {
+      date: '2021-04-09',
+      time: '09:00:00',
+      duration: '01:00:00',
+    },
+  ];
+
   return (
     <div>
         <div className="text-3xl font-bold student-info">
@@ -39,7 +87,13 @@ const Student = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* You can map over your data and create a <tr> for each item */}
+                        {attendanceData.map((data, index) => (
+                            <tr key={index}>
+                                <td className="border border-green-600 px-4 py-2 text-green-700">{data.date}</td>
+                                <td className="border border-green-600 px-4 py-2 text-green-700">{data.time}</td>
+                                <td className="border border-green-600 px-4 py-2 text-green-700">{data.duration}</td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </div>
