@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const AuthContext = createContext();
 
@@ -6,7 +6,28 @@ export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [role, setRole] = useState(null);
 
-  // Load the user's authentication status and role from local storage here
+  useEffect(() => {
+    const fetchToken = async () => {
+      const email = 'user@example.com'; // Replace with the user's email
+      const password = 'password'; // Replace with the user's password
+
+      const response = await fetch('https://your-api-endpoint.com/auth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      if (response.ok) {
+        const { token } = await response.json();
+        localStorage.setItem('authToken', token);
+        setIsLoggedIn(true);
+      } else {
+        // Handle error
+      }
+    };
+
+    fetchToken();
+  }, []);
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn, role, setRole }}>
