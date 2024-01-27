@@ -7,6 +7,11 @@ import './LecturerLogin.css';
 const LecturerLogin = () => {
   const { id } = useParams();
   const { login } = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleLoginClick = (e) => {
     e.preventDefault();
