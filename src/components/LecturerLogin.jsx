@@ -37,7 +37,7 @@ const LecturerLogin = () => {
                 <div className='relative'>
                     <input type={showPassword ? 'text' : 'password'} placeholder='Password' className='p-2 m-2 border-2 rounded-lg login-form-content' />
                     <button onClick={toggleShowPassword} type='button' className='absolute right-2 top-1/2 transform -translate-y-1/2'>
-                    {showPassword ? 'Hide Password' : 'Show Password'}
+                    {showPassword ? 'Hide' : 'Show'}
                     </button>
                 </div>            </div>
             <div className='flex flex-wrap justify-center items-start login-form-half'>
