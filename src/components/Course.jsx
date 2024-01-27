@@ -1,6 +1,8 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
+import { AuthContext } from './AuthContext';
+
 import StudentTile from '../widgets/StudentTile';
 
 import './Course.css';
