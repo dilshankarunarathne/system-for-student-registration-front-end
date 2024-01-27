@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 
-import { AuthContext } from './AuthContext';
+import { AuthContext } from '../auth/AuthContext';
 
 import StudentTile from '../widgets/StudentTile';
 
