@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-import './Course.css';
+import './LecturerLogin.css';
 
 const LecturerLogin = () => {
   const { id } = useParams();
