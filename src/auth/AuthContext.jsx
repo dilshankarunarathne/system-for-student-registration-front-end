@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem('authToken', token);
       setIsLoggedIn(true);
     } else {
-      // Handle error
+      console.log('Login failed');
     }
   };
 
