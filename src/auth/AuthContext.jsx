@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { createContext, useState, useEffect } from 'react';
+import { createContext, useState } from 'react';
 
 export const AuthContext = createContext();
 
@@ -8,33 +7,24 @@ export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [role, setRole] = useState(null);
 
-  useEffect(() => {
-    const fetchToken = async () => {
-      console.log('Fetching token...');
-      
-      const email = 'user@example.com';
-      const password = 'password';
+  const login = async (email, password) => {
+    const response = await fetch('https://your-api-endpoint.com/auth', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password })
+    });
 
-      const response = await fetch('https://your-api-endpoint.com/auth', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
-      });
-
-      if (response.ok) {
-        const { token } = await response.json();
-        localStorage.setItem('authToken', token);
-        setIsLoggedIn(true);
-      } else {
-        console.error('Login failed.');
-      }
-    };
-
-    fetchToken();
-  }, []);
+    if (response.ok) {
+      const { token } = await response.json();
+      localStorage.setItem('authToken', token);
+      setIsLoggedIn(true);
+    } else {
+      // Handle error
+    }
+  };
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn, role, setRole }}>
+    <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn, role, setRole, login }}>
       {children}
     </AuthContext.Provider>
   );
