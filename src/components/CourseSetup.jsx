@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 
 import { AuthContext } from '../auth/AuthContext.jsx';
