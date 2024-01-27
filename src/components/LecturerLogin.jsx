@@ -1,17 +1,13 @@
-import { useParams, Link } from 'react-router-dom';
-import { useState } from 'react';
-
-import StudentTile from '../widgets/StudentTile';
+import { useParams } from 'react-router-dom';
 
 import './Course.css';
 
 const LecturerLogin = () => {
   const { id } = useParams();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLoginClick = (e) => {
     e.preventDefault();
-    setIsLoggedIn(true);
+    
   };
 
   return (
