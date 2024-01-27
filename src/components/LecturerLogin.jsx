@@ -23,7 +23,6 @@ const LecturerLogin = () => {
             <h2 className='text-course-info'>Credits: {id}</h2>
         </div>
 
-        {!isLoggedIn && (
         <div className='flex flex-wrap justify-center items-start lecturer-login-form'>
             <form className='flex flex-wrap justify-center items-start'>
             <div className='flex flex-wrap justify-center items-start login-form-half'>
@@ -37,7 +36,6 @@ const LecturerLogin = () => {
             </div>
             </form>
         </div>
-        )}
     </div>
   );
 };
