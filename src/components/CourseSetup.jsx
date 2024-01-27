@@ -3,8 +3,6 @@ import { useContext, useEffect } from 'react';
 
 import { AuthContext } from '../auth/AuthContext.jsx';
 
-import StudentTile from '../widgets/StudentTile';
-
 import './CourseSetup.css';
 
 const CourseSetup = () => {
