@@ -19,8 +19,12 @@ const Course = () => {
   ];
 
   useEffect(() => {
-    return history.block('/lecturer-login');
-  }, [history]);
+    return () => {
+      if (!isLoggedIn) {
+        navigate('/lecturer-login');
+      }
+    };
+  }, [isLoggedIn, navigate]);
 
   return (
     <div>
