@@ -1,30 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-
-import Login from './components/Login';
-import LecturerLogin from './components/LecturerLogin';
-import Register from './components/Register';
-import Dashboard from './components/Dashboard';
-import Course from './components/Course';
-import Student from './components/Student';
-import MarkAttendance from './components/MarkAttendance';
-import Navbar from './components/Navbar';
+import { AuthProvider } from './auth/AuthContext';
+import AppRoutes from './AppRoutes';
 
 function App() {
   return (
     <Router>
-    <Navbar />
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/course/:id" element={<Course />} />
-        <Route path="/student/:id" element={<Student />} />
-        <Route path="/mark-attendance/:id" element={<MarkAttendance />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/lecturer-login" element={<LecturerLogin />} />
-      </Routes>
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
     </Router>
   );
 }
