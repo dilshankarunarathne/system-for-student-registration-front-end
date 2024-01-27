@@ -1,5 +1,5 @@
 import { useParams, useContext } from 'react-router-dom';
-import { AuthContext } from './AuthContext';
+import { AuthContext } from '../auth/AuthContext';
 
 import './LecturerLogin.css';
 
