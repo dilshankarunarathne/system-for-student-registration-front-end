@@ -11,15 +11,6 @@ const CourseSetup = () => {
     const navigate = useNavigate();
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
- 
-  const students = [
-    { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
-    { id: 2, registration_number: 'EUTC/2019/COM/10', name: 'Jane Doe' },
-    { id: 3, registration_number: 'EUTC/2019/COM/60', name: 'John Smith' },
-    { id: 4, registration_number: 'EUTC/2019/COM/74', name: 'Jane Smith' },
-    /*{ id: 5, registration_number: 'EUTC/2019/COM/57', name: 'Simon Doe' },
-    { id: 6, registration_number: 'EUTC/2019/COM/63', name: 'Karen Doe' },*/
-  ];
 
   useEffect(() => {
     return () => {
