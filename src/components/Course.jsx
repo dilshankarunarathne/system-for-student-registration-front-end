@@ -1,4 +1,4 @@
-import { useParams, Link, useHistory } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
 import StudentTile from '../widgets/StudentTile';
