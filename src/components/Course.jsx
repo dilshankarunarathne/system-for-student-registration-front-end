@@ -43,11 +43,11 @@ const Course = () => {
 
         {isLoggedIn && (
             <div className='flex flex-wrap justify-center items-start student-tiles'>
-            {students.map((student) => (
-                <Link to={`/student/${student.id}`} key={student.id}>
-                <StudentTile registration_number={student.registration_number} name={student.name} />
-                </Link>
-            ))}
+                {students.map((student) => (
+                    <Link to={`/student/${student.id}`} key={student.id}>
+                    <StudentTile registration_number={student.registration_number} name={student.name} />
+                    </Link>
+                ))}
             </div>
         )}
     </div>
