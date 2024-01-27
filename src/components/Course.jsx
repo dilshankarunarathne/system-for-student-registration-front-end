@@ -8,7 +8,7 @@ import './Course.css';
 const Course = () => {
     const navigate = useNavigate();
     const { id } = useParams();
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn] = useState(false);
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
@@ -26,11 +26,6 @@ const Course = () => {
       }
     };
   }, [isLoggedIn, navigate]);
-
-  const handleLoginClick = (e) => {
-  e.preventDefault();
-  setIsLoggedIn(true);
-};
 
   return (
     <div>
