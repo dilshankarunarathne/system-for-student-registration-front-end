@@ -8,8 +8,8 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchToken = async () => {
-      const email = 'user@example.com'; // Replace with the user's email
-      const password = 'password'; // Replace with the user's password
+      const email = 'user@example.com';
+      const password = 'password';
 
       const response = await fetch('https://your-api-endpoint.com/auth', {
         method: 'POST',
