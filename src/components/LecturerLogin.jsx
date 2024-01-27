@@ -18,11 +18,6 @@ const LecturerLogin = () => {
     { id: 6, registration_number: 'EUTC/2019/COM/63', name: 'Karen Doe' },*/
   ];
 
-  const handleLoginClick = (e) => {
-    e.preventDefault();
-    setIsLoggedIn(true);
-  };
-
   return (
     <div>
         <div className="text-3xl font-bold course-info">
