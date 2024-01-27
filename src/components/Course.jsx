@@ -27,6 +27,8 @@ const Course = () => {
     };
   }, [isLoggedIn, navigate]);
 
+  
+
   return (
     <div>
         <div className="text-3xl font-bold course-info">
