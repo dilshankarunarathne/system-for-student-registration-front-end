@@ -6,7 +6,7 @@ import StudentTile from '../widgets/StudentTile';
 import './Course.css';
 
 const Course = () => {
-    const history = useHistory();
+    const navigate = useNavigate();
     const { id } = useParams();
  
   const students = [
