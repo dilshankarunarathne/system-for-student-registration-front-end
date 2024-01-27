@@ -10,6 +10,8 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchToken = async () => {
+      console.log('Fetching token...');
+      
       const email = 'user@example.com';
       const password = 'password';
 
