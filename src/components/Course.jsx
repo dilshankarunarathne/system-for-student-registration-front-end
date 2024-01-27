@@ -19,6 +19,10 @@ const Course = () => {
     { id: 6, registration_number: 'EUTC/2019/COM/63', name: 'Karen Doe' },*/
   ];
 
+  useEffect(() => {
+    return history.block('/lecturer-login');
+  }, [history]);
+
   return (
     <div>
         <div className="text-3xl font-bold course-info">
