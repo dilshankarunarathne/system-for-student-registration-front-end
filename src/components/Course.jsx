@@ -6,7 +6,10 @@ import StudentTile from '../widgets/StudentTile';
 import './Course.css';
 
 const Course = () => {
-  const { id } = useParams();
+    const history = useHistory();
+    const { id } = useParams();
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
