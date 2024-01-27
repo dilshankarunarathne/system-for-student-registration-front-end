@@ -1,4 +1,5 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useContext } from 'react-router-dom';
+import { AuthContext } from './AuthContext';
 
 import './LecturerLogin.css';
 
