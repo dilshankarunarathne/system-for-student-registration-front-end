@@ -27,7 +27,10 @@ const Course = () => {
     };
   }, [isLoggedIn, navigate]);
 
-  
+  const handleLoginClick = (e) => {
+  e.preventDefault();
+  setIsLoggedIn(true);
+};
 
   return (
     <div>
