@@ -4,10 +4,13 @@ import './LecturerLogin.css';
 
 const LecturerLogin = () => {
   const { id } = useParams();
+  const { login } = useContext(AuthContext);
 
   const handleLoginClick = (e) => {
     e.preventDefault();
-    
+    const email = e.target.elements.email.value;
+    const password = e.target.elements.password.value;
+    login(email, password);
   };
 
   return (
