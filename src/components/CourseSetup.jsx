@@ -27,6 +27,8 @@ const CourseSetup = () => {
     };
   }, [isLoggedIn, navigate]);
 
+  
+
   const handleStartLectureMark = () => {
     const now = new Date();
     setStartTime(now);
