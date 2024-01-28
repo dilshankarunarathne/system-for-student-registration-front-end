@@ -75,7 +75,7 @@ const CourseSetup = () => {
         </div>
       )}
 
-{showPopupLecture && (
+      {showPopupLecture && (
         <div className='popup mt-10'>
           <form>
             <label className='ml-3 mr-3'>
