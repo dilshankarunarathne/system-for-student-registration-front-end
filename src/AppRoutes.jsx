@@ -21,6 +21,7 @@ const AppRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/lecturer-login" element={<LecturerLogin />} />
+        
       </Routes>
     </>
   );
