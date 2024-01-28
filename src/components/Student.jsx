@@ -6,6 +6,7 @@ import './Student.css';
 
 const Student = () => {
   const { id } = useParams();
+  // eslint-disable-next-line no-unused-vars
   const navigate = useNavigate();
 
   const attendanceData = [
