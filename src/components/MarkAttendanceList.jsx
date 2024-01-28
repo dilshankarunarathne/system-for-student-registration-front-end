@@ -27,6 +27,18 @@ const MarkAttendanceList = () => {
           clearInterval(timer);
         };
     }, []);
+
+    useEffect(() => {
+        // Replace with your actual API endpoint
+        axios.get('https://api.example.com/lecture-details')
+          .then(response => {
+            setStartTime(response.data.startTime);
+            setDuration(response.data.duration);
+          })
+          .catch(error => {
+            console.error('There was an error!', error);
+          });
+      }, []);
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
