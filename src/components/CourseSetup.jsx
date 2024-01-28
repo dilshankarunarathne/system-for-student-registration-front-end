@@ -27,7 +27,7 @@ const CourseSetup = () => {
     setShowPopupLecture(true);
   }
 
-  const closePopup = () => {
+  const closePopupLecture = () => {
     setShowPopupLecture(false);
   };
 
