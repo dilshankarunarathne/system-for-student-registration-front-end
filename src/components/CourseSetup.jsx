@@ -36,7 +36,7 @@ const CourseSetup = () => {
   };
 
   const editCourseDetails = () => {
-      
+    setShowPopupCourseDetails(true);
   }
 
   return (
