@@ -16,10 +16,15 @@ const MarkAttendanceList = () => {
     const [startTime, setStartTime] = useState(null);
     const [duration, setDuration] = useState(null);
 
-    const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
-  const [startTime, setStartTime] = useState(null);
-  const [duration, setDuration] = useState(null);
-
+    useEffect(() => {
+        const timer = setInterval(() => {
+          setTimeNow(new Date().toLocaleTimeString());
+        }, 1000);
+    
+        return () => {
+          clearInterval(timer);
+        };
+      }, []);
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
