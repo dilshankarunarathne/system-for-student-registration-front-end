@@ -69,7 +69,7 @@ const MarkAttendanceList = () => {
         </div>
 
         <div className='flex flex-wrap justify-center items-start mark-controls'>
-          <button className="new-lecture-button text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleFinishMark}>New Lecture</button>
+          <button className="new-lecture-button text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleFinishMarking}>New Lecture</button>
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-tiles'>
