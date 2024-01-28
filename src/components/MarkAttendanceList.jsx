@@ -11,7 +11,7 @@ import './MarkAttendanceList.css';
 
 const MarkAttendanceList = () => {
     const navigate = useNavigate();
-    const { id } = useParams();
+    const { id, type } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
     const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
