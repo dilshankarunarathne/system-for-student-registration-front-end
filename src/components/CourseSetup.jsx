@@ -56,7 +56,7 @@ const CourseSetup = () => {
         <div className='flex flex-wrap justify-center items-start lec-controls'>
           <button className="new-lecture-button text-2xl mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleNewLecture}>New Lecture</button>
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Edit Course Details</button>
-          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Print Full Report</button>
+          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Print Full Report</button> {/* TODO */}
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Reset All Data</button>
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleStudentsListClick}>Students List</button>
         </div>
