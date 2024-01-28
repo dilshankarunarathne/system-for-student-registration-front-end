@@ -97,7 +97,7 @@ const CourseSetup = () => {
         </div>
 
         <div className='flex flex-wrap justify-center items-start mt-5 current-lecture-controls' style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div className="lec-controls-left" style={{ flexDirection: 'column', display: 'flex' }}>
+          <div className="lec-controls-left" style={{ flexDirection: 'column', display: 'flex', alignItems: 'flex-start' }}>
             <h2 className='text-2xl mb-4 font-bold'>Lecture Started At: {startTime}</h2>
             <h2 className='text-2xl mb-4 font-bold'>Lecture Duration: {duration}</h2>
             <h2 className='text-2xl mr-4 font-bold'>Now: {timeNow}</h2>
