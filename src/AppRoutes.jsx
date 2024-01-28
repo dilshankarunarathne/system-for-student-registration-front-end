@@ -7,6 +7,7 @@ import Course from './components/Course';
 import Student from './components/Student';
 import MarkAttendance from './components/MarkAttendance';
 import Navbar from './components/Navbar';
+import CourseSetup from './components/CourseSetup';
 
 const AppRoutes = () => {
   return (
@@ -21,7 +22,7 @@ const AppRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/lecturer-login" element={<LecturerLogin />} />
-        
+        <Route path="/course-setup" element={<CourseSetup />} />
       </Routes>
     </>
   );
