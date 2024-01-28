@@ -29,6 +29,8 @@ const CourseSetup = () => {
     };
   }, [isLoggedIn, navigate]);
 
+  
+
   useEffect(() => {
     // This effect runs whenever startTime changes.
     // If startTime is not null, it means a lecture has started.
