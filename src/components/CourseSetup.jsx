@@ -29,7 +29,15 @@ const CourseSetup = () => {
     };
   }, [isLoggedIn, navigate]);
 
-  
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeNow(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
   useEffect(() => {
     // This effect runs whenever startTime changes.
