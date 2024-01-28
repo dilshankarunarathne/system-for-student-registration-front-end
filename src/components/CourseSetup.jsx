@@ -47,7 +47,7 @@ const CourseSetup = () => {
         </div>
 
         {showPopup && (
-        <div className='popup'>
+        <div className='popup mt-6'>
           <form>
             <label>
               Lecture Date:
@@ -61,6 +61,7 @@ const CourseSetup = () => {
               Lecture Start Time:
               <input type='time' />
             </label>
+            <br/>
             <button type='submit' className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Submit</button>
             <button onClick={closePopup} className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Close</button>
           </form>
