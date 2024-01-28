@@ -29,7 +29,6 @@ const MarkAttendanceList = () => {
     }, []);
 
     useEffect(() => {
-        // Replace with your actual API endpoint
         axios.get('https://api.example.com/lecture-details')
           .then(response => {
             setStartTime(response.data.startTime);
