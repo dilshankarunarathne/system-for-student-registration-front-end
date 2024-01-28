@@ -61,8 +61,8 @@ const CourseSetup = () => {
               Lecture Start Time:
               <input type='time' />
             </label>
-            <button type='submit' className='text-2xl mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Submit</button>
-            <button onClick={closePopup} className='text-2xl mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Close</button>
+            <button type='submit' className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Submit</button>
+            <button onClick={closePopup} className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Close</button>
           </form>
         </div>
       )}
