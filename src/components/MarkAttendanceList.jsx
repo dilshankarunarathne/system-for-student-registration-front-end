@@ -12,7 +12,10 @@ const MarkAttendanceList = () => {
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
-    
+    const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
+    const [startTime, setStartTime] = useState(null);
+    const [duration, setDuration] = useState(null);
+
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
