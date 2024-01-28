@@ -38,7 +38,7 @@ const MarkAttendanceList = () => {
             <h2 className='text-course-info'>Credits: {id}</h2>
             <h2 className='text-course-info'>Lecture Started At: {startTime}</h2>
             <h2 className='text-course-info'>Lecture Duration: {duration}</h2>
-            <h2 className='text-2xl mr-4 font-bold'>Now: {timeNow}</h2>
+            <h2 className='text-course-info'>Now: {timeNow}</h2>
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-tiles'>
