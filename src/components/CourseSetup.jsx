@@ -79,7 +79,7 @@ const CourseSetup = () => {
         <div className='popup edit-course-details-form mt-10'>
           <form>
             <label className='ml-3 mr-3'>
-              Lecture Date:
+              Course Code:
               <input type='text' defaultValue={currentDate} />
             </label>
             <label className='ml-3 mr-3'>
