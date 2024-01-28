@@ -100,9 +100,9 @@ const CourseSetup = () => {
           <h2 className='text-2xl mr-4 font-bold'>Lecture Started At: {startTime}</h2>
           <h2 className='text-2xl mr-4 font-bold'>Lecture Duration: {duration}</h2>
           <h2 className='text-2xl mr-4 font-bold'>Now: {timeNow}</h2>
-          <br /><br />
-          <button className="new-lecture-button text-2xl mr-4 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleStartLectureMark}>Mark Start Lecture</button>
-          <button className="edit-course-button text-2xl mr-4 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleEndLectureMark}>Mark End Lecture</button>
+          <br />
+          <button className="new-lecture-button text-2xl mb-4 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleStartLectureMark}>Mark Start Lecture</button>
+          <button className="edit-course-button text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleEndLectureMark}>Mark End Lecture</button>
         </div>
 
         {showPopupLecture && (
