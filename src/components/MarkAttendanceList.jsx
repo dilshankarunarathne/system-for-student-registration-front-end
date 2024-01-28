@@ -38,7 +38,7 @@ const MarkAttendanceList = () => {
           .catch(error => {
             console.error('There was an error!', error);
           });
-      }, []);
+    }, []);
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
