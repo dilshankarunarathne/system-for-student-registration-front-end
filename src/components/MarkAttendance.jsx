@@ -4,7 +4,7 @@ import Webcam from "react-webcam";
 import './MarkAttendance.css';
 
 const MarkAttendance = () => {
-  const { id, lecId } = useParams();
+  const { studId, lecId } = useParams();
 
   return (
     <div>
@@ -12,8 +12,8 @@ const MarkAttendance = () => {
             <h2 className='text-course-info'>Name: Mr. Some Student</h2>
             <h2 className='text-course-info'>Registration Number : EUTC/2019/COM/24</h2>
             <h2 className='text-course-info'>Academic Year: 2021-2022</h2>
-            <h2 className='text-course-info'>GPA: {id}</h2>
-            <h2 className='text-course-info'>Lecture ID: {id}</h2>
+            <h2 className='text-course-info'>GPA: {studId}</h2>
+            <h2 className='text-course-info'>Lecture ID: {lecId}</h2>
         </div>
 
         <div className='flex justify-center camera-container'>
