@@ -49,4 +49,4 @@ const MarkAttendanceList = () => {
   );
 };
 
-export default Course;
+export default MarkAttendanceList;
