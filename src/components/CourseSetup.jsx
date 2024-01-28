@@ -7,6 +7,7 @@ import './CourseSetup.css';
 
 const CourseSetup = () => {
     const navigate = useNavigate();
+    
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
@@ -53,7 +54,7 @@ const CourseSetup = () => {
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Edit Course Details</button>
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Print Full Report</button>
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Reset All Data</button>
-          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Students List</button>
+          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={}>Students List</button>
         </div>
 
         {showPopupLecture && (
