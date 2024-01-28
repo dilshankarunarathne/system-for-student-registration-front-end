@@ -5,7 +5,7 @@ import { AuthContext } from '../auth/AuthContext.jsx';
 
 import StudentTile from '../widgets/StudentTile';
 
-import './Course.css';
+import './MarkAttendanceList.css';
 
 const MarkAttendanceList = () => {
     const navigate = useNavigate();
