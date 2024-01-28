@@ -11,6 +11,7 @@ const CourseSetup = () => {
     const { isLoggedIn } = useContext(AuthContext);
 
     const [showPopupLecture, setShowPopupLecture] = useState(false);
+    const [showPopupCourseDetails, setShowPopupCourseDetails] = useState(false);
 
     const currentDate = new Date().toISOString().substr(0, 10);
 
