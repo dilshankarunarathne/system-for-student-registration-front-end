@@ -45,6 +45,27 @@ const CourseSetup = () => {
           <button className="new-lecture-button text-2xl mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleNewLecture}>New Lecture</button>
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Edit Course Details</button>
         </div>
+
+        {showPopup && (
+        <div className='popup'>
+          <button onClick={closePopup}>Close</button>
+          <form>
+            <label>
+              Lecture Date:
+              <input type='date' />
+            </label>
+            <label>
+              Lecture Duration:
+              <input type='number' min='0' />
+            </label>
+            <label>
+              Lecture Start Time:
+              <input type='time' />
+            </label>
+            <button type='submit'>Submit</button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };
