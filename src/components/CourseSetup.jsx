@@ -31,6 +31,14 @@ const CourseSetup = () => {
     setShowPopupLecture(false);
   };
 
+  const handleNewLecture = () => {
+    setShowPopupLecture(true);
+  }
+
+  const closePopupLecture = () => {
+    setShowPopupLecture(false);
+  };
+
   const editCourseDetails = () => {
       
   }
