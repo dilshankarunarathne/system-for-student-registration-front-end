@@ -49,7 +49,7 @@ const CourseSetup = () => {
         {showPopup && (
         <div className='popup mt-6'>
           <form>
-            <label>
+            <label className='ml-3 mr-3'>
               Lecture Date:
               <input type='date' />
             </label>
