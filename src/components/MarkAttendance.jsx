@@ -4,7 +4,7 @@ import Webcam from "react-webcam";
 import './MarkAttendance.css';
 
 const MarkAttendance = () => {
-  const { lec } = useParams();
+  const { id, lecId } = useParams();
 
   return (
     <div>
