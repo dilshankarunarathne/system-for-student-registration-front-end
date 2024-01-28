@@ -74,6 +74,28 @@ const CourseSetup = () => {
           </form>
         </div>
       )}
+
+{showPopupLecture && (
+        <div className='popup mt-10'>
+          <form>
+            <label className='ml-3 mr-3'>
+              Lecture Date:
+              <input type='date' defaultValue={currentDate} />
+            </label>
+            <label className='ml-3 mr-3'>
+              Lecture Duration (min):
+              <input type='number' min='0' />
+            </label>
+            <label className='ml-3 mr-3'>
+              Lecture Start Time:
+              <input type='time' />
+            </label>
+            <br/><br/>
+            <button type='submit' className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Save</button>
+            <button onClick={closePopupLecture} className='text-l ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Close</button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };
