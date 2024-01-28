@@ -31,11 +31,7 @@ const CourseSetup = () => {
     setShowPopupLecture(false);
   };
 
-  const handleNewLecture = () => {
-    setShowPopupLecture(true);
-  }
-
-  const closePopupLecture = () => {
+  const closePopupCourseDetails = () => {
     setShowPopupLecture(false);
   };
 
