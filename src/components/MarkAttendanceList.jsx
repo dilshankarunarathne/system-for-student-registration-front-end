@@ -56,6 +56,13 @@ const MarkAttendanceList = () => {
     };
   }, [isLoggedIn, navigate]);
 
+  const handleFinishMarking = () => {
+    // Do any cleanup or finalization tasks here
+
+    // Navigate to a different route
+    navigate('/some-route');
+  };
+
   return (
     <div>
         <div className="text-3xl font-bold course-info">
