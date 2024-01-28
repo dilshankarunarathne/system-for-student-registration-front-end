@@ -69,6 +69,7 @@ const Student = () => {
             <h2 className='text-course-info'>GPA: {id}</h2>
         </div>
 
+        {/* 
         <div className='flex flex-wrap justify-center items-start student-login-form'>
             <form className='flex flex-wrap justify-center items-start'>
                 <div className='flex flex-wrap justify-center items-start login-form-half'>
@@ -81,7 +82,8 @@ const Student = () => {
                     <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content'>Register</button>
                 </div>
             </form>
-        </div>
+        </div> 
+        */}
 
         <div className='flex flex-wrap justify-center items-start student-data'>
             <div className='flex flex-wrap justify-center items-start student-data-table-container'>
