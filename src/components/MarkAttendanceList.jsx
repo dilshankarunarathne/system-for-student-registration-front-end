@@ -7,7 +7,7 @@ import StudentTile from '../widgets/StudentTile';
 
 import './Course.css';
 
-const Course = () => {
+const MarkAttendanceList = () => {
     const navigate = useNavigate();
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
