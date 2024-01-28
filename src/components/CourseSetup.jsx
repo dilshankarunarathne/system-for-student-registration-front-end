@@ -32,7 +32,7 @@ const CourseSetup = () => {
   };
 
   const closePopupCourseDetails = () => {
-    setShowPopupLecture(false);
+    setShowPopupCourseDetails(false);
   };
 
   const editCourseDetails = () => {
