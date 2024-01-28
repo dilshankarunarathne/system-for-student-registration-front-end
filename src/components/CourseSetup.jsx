@@ -83,7 +83,7 @@ const CourseSetup = () => {
               <input type='text' />
             </label>
             <label className='ml-3 mr-3'>
-              Lecture Duration (min):
+              Total Hours:
               <input type='number' min='0' />
             </label>
             <label className='ml-3 mr-3'>
