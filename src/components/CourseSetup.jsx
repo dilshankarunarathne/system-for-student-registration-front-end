@@ -33,7 +33,7 @@ const CourseSetup = () => {
 
         <div className='flex flex-wrap justify-center items-start lec-controls'>
           <button className="new-lecture-button" onClick={handleNewLecture}>New Lecture</button>
-          <button className="edit-course-button">Edit Course Details</button>
+          <button className="edit-course-button" onClick={editCourseDetails}>Edit Course Details</button>
         </div>
     </div>
   );
