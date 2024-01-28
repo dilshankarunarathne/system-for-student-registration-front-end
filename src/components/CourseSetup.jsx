@@ -27,8 +27,9 @@ const CourseSetup = () => {
             <h2 className='text-course-info'>Credits: {id}</h2>
         </div>
 
-        <div className='flex flex-wrap justify-center items-start'>
-            
+        <div className='flex flex-wrap justify-center items-start lec-controls'>
+          <button className="new-lecture-button">New Lecture</button>
+          <button className="edit-course-button">Edit Course Details</button>
         </div>
     </div>
   );
