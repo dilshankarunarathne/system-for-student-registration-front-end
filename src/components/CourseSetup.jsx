@@ -19,7 +19,7 @@ const CourseSetup = () => {
   }, [isLoggedIn, navigate]);
 
   const handleNewLecture = () => {
-    navigate('/mark-attendance');
+    
   }
 
   return (
