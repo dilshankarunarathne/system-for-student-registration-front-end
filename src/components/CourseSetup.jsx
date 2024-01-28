@@ -10,6 +10,8 @@ const CourseSetup = () => {
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
+    const [showPopup, setShowPopup] = useState(false);
+
   useEffect(() => {
     return () => {
       if (!isLoggedIn) {
