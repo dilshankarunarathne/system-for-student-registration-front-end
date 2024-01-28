@@ -34,9 +34,9 @@ const CourseSetup = () => {
 
   const handleEndLectureMark = () => {
     const now = new Date();
-    const duration = Math.abs(now - startTime) / 1000; // duration in seconds
+    const duration = Math.abs(now - startTime) / 1000; 
     setDuration(duration);
-    setStartTime(null); // reset start time
+    setStartTime(null); 
   };
 
   const handleStudentsListClick = () => {
