@@ -56,9 +56,9 @@ const Student = () => {
     },
   ];
 
-    const handleLogin = () => {
-        navigate(`/mark-attendance/${id}`);
-    };
+    // const handleLogin = () => {
+    //     navigate(`/mark-attendance/${id}`);
+    // };
 
   return (
     <div>
