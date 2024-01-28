@@ -97,11 +97,8 @@ const CourseSetup = () => {
         </div>
 
         <div className='flex flex-wrap justify-center items-start mt-5 current-lecture-controls'>
-          <h2 className='text-2xl mr-4 font-bold'>Lecture Started At: {startTime}</h2>
-          <h2 className='text-2xl mr-4 font-bold'>Lecture Duration: {duration}</h2>
-          <h2 className='text-2xl mr-4 font-bold'>Now: {timeNow}</h2>
           <div style={{ flexDirection: 'column', display: 'flex' }}>
-            
+
           </div>
           <div style={{ flexDirection: 'column', display: 'flex' }}></div>
           <button className="new-lecture-button text-2xl mb-4 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleStartLectureMark}>Mark Start Lecture</button>
