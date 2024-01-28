@@ -22,6 +22,10 @@ const CourseSetup = () => {
     
   }
 
+  const editCourseDetails = () => {
+      
+  }
+
   return (
     <div>
         <div className="text-3xl font-bold course-info">
