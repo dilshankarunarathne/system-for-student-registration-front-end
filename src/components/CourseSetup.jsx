@@ -17,6 +17,8 @@ const CourseSetup = () => {
     const [showPopupLecture, setShowPopupLecture] = useState(false);
     const [showPopupCourseDetails, setShowPopupCourseDetails] = useState(false);
 
+    const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
+
     const currentDate = new Date().toISOString().substr(0, 10);
 
   useEffect(() => {
