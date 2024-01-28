@@ -8,7 +8,6 @@ import Student from './components/Student';
 import MarkAttendance from './components/MarkAttendance';
 import Navbar from './components/Navbar';
 import CourseSetup from './components/CourseSetup';
-import MarkAttendanceList from './components/MarkAttendanceList';
 
 const AppRoutes = () => {
   return (
