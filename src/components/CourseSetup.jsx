@@ -12,6 +12,8 @@ const CourseSetup = () => {
 
     const [showPopup, setShowPopup] = useState(false);
 
+    const currentDate = new Date().toISOString().substr(0, 10);
+
   useEffect(() => {
     return () => {
       if (!isLoggedIn) {
