@@ -11,6 +11,9 @@ const CourseSetup = () => {
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
+    const [startTime, setStartTime] = useState(null);
+    const [duration, setDuration] = useState(0);
+
     const [showPopupLecture, setShowPopupLecture] = useState(false);
     const [showPopupCourseDetails, setShowPopupCourseDetails] = useState(false);
 
