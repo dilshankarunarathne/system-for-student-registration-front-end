@@ -24,6 +24,10 @@ const CourseSetup = () => {
     setShowPopup(true);
   }
 
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
   const editCourseDetails = () => {
       
   }
