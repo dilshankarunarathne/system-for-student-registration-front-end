@@ -70,7 +70,7 @@ const CourseSetup = () => {
             </label>
             <br/><br/>
             <button type='submit' className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Save</button>
-            <button onClick={closePopupLecture} className='text-l ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Close</button>
+            <button onClick={closePopupCourseDetails} className='text-l ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Close</button>
           </form>
         </div>
       )}
