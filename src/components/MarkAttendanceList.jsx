@@ -68,6 +68,14 @@ const MarkAttendanceList = () => {
             <h2 className='text-course-info'>Now: {timeNow}</h2>
         </div>
 
+        <div className='flex flex-wrap justify-center items-start lec-controls'>
+          <button className="new-lecture-button text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleNewLecture}>New Lecture</button>
+          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Edit Course Details</button>
+          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Print Full Report</button> {/* TODO */}
+          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Reset All Data</button>
+          <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleStudentsListClick}>Students List</button>
+        </div>
+
         <div className='flex flex-wrap justify-center items-start student-tiles'>
             {students.map((student) => (
                 <Link to={`/student/${student.id}`} key={student.id}>
