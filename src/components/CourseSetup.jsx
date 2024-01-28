@@ -54,7 +54,7 @@ const CourseSetup = () => {
               <input type='date' />
             </label>
             <label className='ml-3 mr-3'>
-              Lecture Duration:
+              Lecture Duration (min):
               <input type='number' min='0' />
             </label>
             <label className='ml-3 mr-3'>
