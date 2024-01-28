@@ -27,6 +27,18 @@ const CourseSetup = () => {
     };
   }, [isLoggedIn, navigate]);
 
+  const handleStartLectureMark = () => {
+    const now = new Date();
+    setStartTime(now);
+  };
+
+  const handleEndLectureMark = () => {
+    const now = new Date();
+    const duration = Math.abs(now - startTime) / 1000; // duration in seconds
+    setDuration(duration);
+    setStartTime(null); // reset start time
+  };
+
   const handleStudentsListClick = () => {
     navigate(`/course/${id}`);
   };
