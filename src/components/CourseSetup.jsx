@@ -7,7 +7,7 @@ import './CourseSetup.css';
 
 const CourseSetup = () => {
     const navigate = useNavigate();
-    
+
     const { id } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
@@ -24,6 +24,10 @@ const CourseSetup = () => {
     };
   }, [isLoggedIn, navigate]);
 
+  const handleStudentsListClick = () => {
+    navigate(`/course/${id}`);
+  };
+  
   const handleNewLecture = () => {
     setShowPopupLecture(true);
   }
