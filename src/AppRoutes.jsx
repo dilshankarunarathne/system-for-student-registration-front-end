@@ -9,6 +9,7 @@ import MarkAttendance from './components/MarkAttendance';
 import Navbar from './components/Navbar';
 import CourseSetup from './components/CourseSetup';
 
+
 const AppRoutes = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const AppRoutes = () => {
         <Route path="/course/:id" element={<Course />} />
         <Route path="/student/:id" element={<Student />} />
         <Route path="/mark-attendance/:studId/:lecId" element={<MarkAttendance />} />
-        {/* <Route path='/course-attendance-mark/:id' element={<MarkAttendanceList />} /> */}
+        <Route path='/course-attendance-mark/:id' element={<MarkAttendanceList />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/lecturer-login" element={<LecturerLogin />} />
