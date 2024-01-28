@@ -48,7 +48,7 @@ const CourseSetup = () => {
           <button className="edit-course-button text-2xl ml-3 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={editCourseDetails}>Edit Course Details</button>
         </div>
 
-        {showPopup && (
+        {showPopupLecture && (
         <div className='popup mt-10'>
           <form>
             <label className='ml-3 mr-3'>
