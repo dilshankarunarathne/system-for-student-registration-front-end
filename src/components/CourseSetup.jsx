@@ -80,7 +80,7 @@ const CourseSetup = () => {
           <form>
             <label className='ml-3 mr-3'>
               Lecture Date:
-              <input type='date' defaultValue={currentDate} />
+              <input type='text' defaultValue={currentDate} />
             </label>
             <label className='ml-3 mr-3'>
               Lecture Duration (min):
