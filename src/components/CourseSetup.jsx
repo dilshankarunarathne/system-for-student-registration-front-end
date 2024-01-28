@@ -87,8 +87,8 @@ const CourseSetup = () => {
               <input type='number' min='0' />
             </label>
             <label className='ml-3 mr-3'>
-              Lecture Start Time:
-              <input type='time' />
+              Total Credits:
+              <input type='number' min='0' />
             </label>
             <br/><br/>
             <button type='submit' className='text-l mr-3 font-bold bg-blue-500 text-white p-2 rounded-lg'>Save</button>
