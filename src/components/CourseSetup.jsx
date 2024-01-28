@@ -105,7 +105,7 @@ const CourseSetup = () => {
           <div style={{ flexDirection: 'column', display: 'flex' }}>
           <button className="new-lecture-button text-2xl mb-4 font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleStartLectureMark}>Mark Start Lecture</button>
           <button className="edit-course-button text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg" onClick={handleEndLectureMark}>Mark End Lecture</button>
-          
+          </div>
         </div>
 
         {showPopupLecture && (
