@@ -21,7 +21,7 @@ const CourseSetup = () => {
   }, [isLoggedIn, navigate]);
 
   const handleNewLecture = () => {
-    
+    setShowPopup(true);
   }
 
   const editCourseDetails = () => {
