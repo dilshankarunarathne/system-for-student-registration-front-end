@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react';
 
 import './StudentTile.css';
 
-OAUTH_TOKEN = 
-
 StudentTile.propTypes = {
     id: PropTypes.string.isRequired,
 };
 
 function StudentTile({ id }) {
+    const OAUTH_TOKEN = localStorage.getItem('token');
+
     const [student, setStudent] = useState({ registration_number: '', name: '' });
 
     useEffect(() => {
