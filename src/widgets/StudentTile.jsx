@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+
 import './StudentTile.css';
 
 StudentTile.propTypes = {
