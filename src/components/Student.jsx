@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useEffect, useState } from 'react-router-dom';
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 
@@ -22,7 +22,7 @@ const Student = () => {
       .then(data => setStudentInfo(data))
       .catch(error => console.error('There was an error!', error));
   }, [id]);
-  
+
   const attendanceData = [
     {
       date: '2021-04-01',
