@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 
 import './StudentTile.css';
 
+OAUTH_TOKEN = 
+
 StudentTile.propTypes = {
     id: PropTypes.string.isRequired,
 };
@@ -15,7 +17,7 @@ function StudentTile({ id }) {
             const response = await fetch('http://127.0.0.1:8000/api/course/get-all', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${YOUR_OAUTH_TOKEN}`,
+                    'Authorization': `Bearer ${OAUTH_TOKEN}`,
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ id }),
