@@ -71,6 +71,7 @@ const MarkAttendanceList = () => {
 
   const handleFinishMarking = () => {
     // TODO Do any cleanup or finalization tasks here
+    // TODO re-login lecturer
     navigate('/course/{id}');
   };
 
