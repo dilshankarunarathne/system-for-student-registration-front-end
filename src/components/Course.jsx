@@ -49,10 +49,10 @@ const Course = () => {
   return (
     <div>
         <div className="text-3xl font-bold course-info">
-            <h2 className='text-course-info'>Course Code: {course.code}</h2>
-            <h2 className='text-course-info'>Academic Year: {course.academic_year}</h2>
+            <h2 className='text-course-info'>Course Code: {course.data.code}</h2>
+            <h2 className='text-course-info'>Academic Year: {course.data.academic_year}</h2>
             <h2 className='text-course-info'>Lecturer: Mr. Some Guy</h2>
-            <h2 className='text-course-info'>Credits: {course.credits}</h2>
+            <h2 className='text-course-info'>Credits: {course.data.credits}</h2>
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-tiles'>
