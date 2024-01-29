@@ -47,7 +47,7 @@ const MarkAttendanceList = () => {
     .then(response => {
         setCourseDetails(response.data.data);
 
-        return axios.get('http://127.0.0.1:8000/api/lecturer/get-by-id', {
+        return axios.get('http://127.0.0.1:8000/api/lecturer', {
             params: {
                 lid: response.data.data.lecturer_id
             }
