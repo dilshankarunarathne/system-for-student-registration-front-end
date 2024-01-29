@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 import './CourseTile.css';
 
 CourseTile.propTypes = {
-    courseCode: PropTypes.string.isRequired,
-    academicYear: PropTypes.string.isRequired,
+    id: PropTypes.int.isRequired,
 };
 
-function CourseTile({ courseCode, academicYear }) {
+function CourseTile({ id }) {
     return (
         <div className="w-64 h-64 border-2 border-black flex flex-col justify-center items-center m-4 tile">
             <h2 className="text-2xl course-code tile-text">{courseCode}</h2>
