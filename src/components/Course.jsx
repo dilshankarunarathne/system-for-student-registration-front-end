@@ -8,23 +8,40 @@ import StudentTile from '../widgets/StudentTile';
 import './Course.css';
 
 const Course = () => {
-    const navigate = useNavigate();
-    const { id } = useParams();
-    const { isLoggedIn } = useContext(AuthContext);
- 
-  const students = [
-    { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
-    { id: 2, registration_number: 'EUTC/2019/COM/10', name: 'Jane Doe' },
-    { id: 3, registration_number: 'EUTC/2019/COM/60', name: 'John Smith' },
-    { id: 4, registration_number: 'EUTC/2019/COM/74', name: 'Jane Smith' },
-  ];
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const { isLoggedIn } = useContext(AuthContext);
+
+  const [course, setCourse] = useState({ code: '', academic_year: '', lecturer: '', credits: '' });
 
   useEffect(() => {
-    return () => {
-      if (!isLoggedIn) {
-        navigate('/lecturer-login');
-      }
-    };
+      const fetchData = async () => {
+          const response = await fetch('http://127.0.0.1:8000/api/course/get-by-id', {
+              method: 'GET',
+              headers: {
+                  'Authorization': `Bearer ${YOUR_OAUTH_TOKEN}`,
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ cid: id }),
+          });
+
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+
+          const data = await response.json();
+          setCourse(data);
+      };
+
+      fetchData();
+  }, [id]);
+
+  useEffect(() => {
+      return () => {
+          if (!isLoggedIn) {
+              navigate('/lecturer-login');
+          }
+      };
   }, [isLoggedIn, navigate]);
 
   return (
