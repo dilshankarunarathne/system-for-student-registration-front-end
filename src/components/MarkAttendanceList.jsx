@@ -10,36 +10,37 @@ import StudentTile from '../widgets/StudentTile';
 import './MarkAttendanceList.css';
 
 const MarkAttendanceList = () => {
-    const navigate = useNavigate();
-    // TODO
-    // eslint-disable-next-line no-unused-vars
-    const { id, type } = useParams();
-    const { isLoggedIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
+  const { id, type } = useParams();
+  const { isLoggedIn } = useContext(AuthContext);
 
-    const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
-    const [startTime, setStartTime] = useState(null);
-    const [duration, setDuration] = useState(null);
+  const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
+  const [lectureDetails, setLectureDetails] = useState({ start_time: '', duration: '' });
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-          setTimeNow(new Date().toLocaleTimeString());
-        }, 1000);
-    
-        return () => {
-          clearInterval(timer);
-        };
-    }, []);
+  useEffect(() => {
+      const timer = setInterval(() => {
+        setTimeNow(new Date().toLocaleTimeString());
+      }, 1000);
+  
+      return () => {
+        clearInterval(timer);
+      };
+  }, []);
 
-    useEffect(() => {
-        axios.get('https://api.example.com/lecture-details')
-          .then(response => {
-            setStartTime(response.data.startTime);
-            setDuration(response.data.duration);
-          })
-          .catch(error => {
-            console.error('There was an error!', error);
-          });
-    }, []);
+  useEffect(() => {
+      axios.get('http://127.0.0.1:8000/api/class', {
+          params: {
+              class_id: id
+          }
+      })
+      .then(response => {
+          setLectureDetails(response.data);
+      })
+      .catch(error => {
+          console.error('There was an error!', error);
+      });
+  }, [id]);
  
   const students = [
     { id: 1, registration_number: 'EUTC/2019/COM/24', name: 'John Doe' },
