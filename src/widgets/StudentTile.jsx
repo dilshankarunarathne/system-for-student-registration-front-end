@@ -2,8 +2,7 @@ import PropTypes from 'prop-types';
 import './StudentTile.css';
 
 StudentTile.propTypes = {
-    registration_number: PropTypes.string.isRequired,
-    name : PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
 };
 
 function StudentTile({ id }) {
