@@ -11,7 +11,6 @@ import './MarkAttendanceList.css';
 
 const MarkAttendanceList = () => {
   const navigate = useNavigate();
-    // eslint-disable-next-line no-unused-vars
     const { id, type } = useParams();
     const { isLoggedIn } = useContext(AuthContext);
 
