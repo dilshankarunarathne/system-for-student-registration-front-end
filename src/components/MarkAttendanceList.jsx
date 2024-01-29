@@ -92,9 +92,9 @@ const MarkAttendanceList = () => {
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-tiles'>
-            {students.map((student) => (
-                <Link to={`/student/${student.id}`} key={student.id}>
-                    <StudentTile id={student.id} />
+            {courseDetails.enrolled_students_sid.map((studentId) => (
+                <Link to={`/student/${studentId}`} key={studentId}>
+                    <StudentTile id={studentId} />
                 </Link>
             ))}
         </div>
