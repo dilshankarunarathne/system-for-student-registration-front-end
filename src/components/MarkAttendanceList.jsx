@@ -20,7 +20,7 @@ const MarkAttendanceList = () => {
     const [courseDetails, setCourseDetails] = useState({ code: '', academic_year: '', credits: '' });
     const [lecturerDetails, setLecturerDetails] = useState({ name: '' });
 
-  useEffect(() => {
+    useEffect(() => {
       const timer = setInterval(() => {
         setTimeNow(new Date().toLocaleTimeString());
       }, 1000);
@@ -30,36 +30,36 @@ const MarkAttendanceList = () => {
       };
   }, []);
 
-  useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/class', {
-        params: {
-            class_id: id
-        }
-    })
-    .then(response => {
-        setLectureDetails(response.data);
+    useEffect(() => {
+      axios.get('http://127.0.0.1:8000/api/class', {
+          params: {
+              class_id: id
+          }
+      })
+      .then(response => {
+          setLectureDetails(response.data);
 
-        return axios.get('http://127.0.0.1:8000/api/course/get-by-id', {
-            params: {
-                cid: response.data.course_id
-            }
-        });
-    })
-    .then(response => {
-        setCourseDetails(response.data.data);
+          return axios.get('http://127.0.0.1:8000/api/course/get-by-id', {
+              params: {
+                  cid: response.data.course_id
+              }
+          });
+      })
+      .then(response => {
+          setCourseDetails(response.data.data);
 
-        return axios.get('http://127.0.0.1:8000/api/lecturer', {
-            params: {
-                lid: response.data.data.lecturer_id
-            }
-        });
-    })
-    .then(response => {
-        setLecturerDetails(response.data.data);
-    })
-    .catch(error => {
-        console.error('There was an error!', error);
-    });
+          return axios.get('http://127.0.0.1:8000/api/lecturer/get-by-id', {
+              params: {
+                  lid: response.data.data.lecturer_id
+              }
+          });
+      })
+      .then(response => {
+          setLecturerDetails(response.data.data);
+      })
+      .catch(error => {
+          console.error('There was an error!', error);
+      });
   }, [id]);
 
   useEffect(() => {
