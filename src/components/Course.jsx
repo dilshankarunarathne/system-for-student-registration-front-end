@@ -19,7 +19,7 @@ const Course = () => {
           const response = await fetch('http://127.0.0.1:8000/api/course/get-by-id', {
               method: 'GET',
               headers: {
-                  'Authorization': `Bearer ${YOUR_OAUTH_TOKEN}`,
+                  'Authorization': `Bearer ${OAUTH_TOKEN}`,
                   'Content-Type': 'application/json',
               },
               body: JSON.stringify({ cid: id }),
