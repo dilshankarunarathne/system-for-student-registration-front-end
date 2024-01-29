@@ -15,6 +15,8 @@ const Course = () => {
   const [course, setCourse] = useState({ code: '', academic_year: '', lecturer: '', credits: '' });
 
   useEffect(() => {
+    const OAUTH_TOKEN = localStorage.getItem('token');
+
       const fetchData = async () => {
           const response = await fetch('http://127.0.0.1:8000/api/course/get-by-id', {
               method: 'GET',
