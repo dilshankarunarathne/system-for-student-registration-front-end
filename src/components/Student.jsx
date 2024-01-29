@@ -8,7 +8,21 @@ const Student = () => {
   const { id } = useParams();
   // eslint-disable-next-line no-unused-vars
   const navigate = useNavigate();
+  const [studentInfo, setStudentInfo] = useState({});
 
+  useEffect(() => {
+      fetch(`http://127.0.0.1:8000/api/student/get-by-id`, {
+          method: 'GET',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ sid: id }),
+      })
+      .then(response => response.json())
+      .then(data => setStudentInfo(data))
+      .catch(error => console.error('There was an error!', error));
+  }, [id]);
+  
   const attendanceData = [
     {
       date: '2021-04-01',
