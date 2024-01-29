@@ -71,10 +71,6 @@ const Student = () => {
     },
   ];
 
-    // const handleLogin = () => {
-    //     navigate(`/mark-attendance/${id}`);
-    // };
-
   return (
     <div>
         <div className="text-3xl font-bold student-info">
@@ -82,22 +78,6 @@ const Student = () => {
             <h2 className='text-course-info'>Registration Number : {studentInfo.reg_no}</h2>
             <h2 className='text-course-info'>Academic Year: {studentInfo.academic_year}</h2>
         </div>
-
-        {/* 
-        <div className='flex flex-wrap justify-center items-start student-login-form'>
-            <form className='flex flex-wrap justify-center items-start'>
-                <div className='flex flex-wrap justify-center items-start login-form-half'>
-                    <h3 className='text-2xl font-bold login-form-content'>Student Login</h3>
-                    <input type='text' placeholder='Username' className='p-2 m-2 border-2 rounded-lg login-form-content' />
-                    <input type='password' placeholder='Password' className='p-2 m-2 border-2 rounded-lg login-form-content' />
-                </div>
-                <div className='flex flex-wrap justify-center items-start login-form-half buttons'>
-                    <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content' onClick={handleLogin}>Login</button>
-                    <button className='text-2xl font-bold bg-blue-500 text-white p-2 rounded-lg login-form-content'>Register</button>
-                </div>
-            </form>
-        </div> 
-        */}
 
         <div className='flex flex-wrap justify-center items-start student-data'>
             <div className='flex flex-wrap justify-center items-start student-data-table-container'>
