@@ -1,4 +1,4 @@
-import { useParams, useEffect, useState } from 'react-router-dom';
+import { useParams, useEffect, useState, useNavigate } from 'react-router-dom';
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 
