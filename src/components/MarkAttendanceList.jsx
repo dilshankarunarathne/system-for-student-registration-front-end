@@ -19,7 +19,6 @@ const MarkAttendanceList = () => {
     const [lectureDetails, setLectureDetails] = useState({ start_time: '', duration: '' });
     const [courseDetails, setCourseDetails] = useState({ code: '', academic_year: '', credits: '' });
 
-
   useEffect(() => {
       const timer = setInterval(() => {
         setTimeNow(new Date().toLocaleTimeString());
