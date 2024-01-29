@@ -21,7 +21,7 @@ const Dashboard = () => {
 		<div className="flex flex-wrap justify-center h-screen p-4 courses">
 			{courses.map((course) => (
 				<Link to={`/course/${course.id}`} key={course.id}>
-					<CourseTile id={course.id} />
+					<CourseTile courseCode={course.courseCode} academicYear={course.academicYear} />
 				</Link>
 			))}
         </div>
