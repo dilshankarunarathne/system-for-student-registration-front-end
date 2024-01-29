@@ -29,17 +29,26 @@ const MarkAttendanceList = () => {
   }, []);
 
   useEffect(() => {
-      axios.get('http://127.0.0.1:8000/api/class', {
-          params: {
-              class_id: id
-          }
-      })
-      .then(response => {
-          setLectureDetails(response.data);
-      })
-      .catch(error => {
-          console.error('There was an error!', error);
-      });
+    axios.get('http://127.0.0.1:8000/api/class', {
+        params: {
+            class_id: id
+        }
+    })
+    .then(response => {
+        setLectureDetails(response.data);
+
+        return axios.get('http://127.0.0.1:8000/api/course/get-by-id', {
+            params: {
+                cid: response.data.course_id
+            }
+        });
+    })
+    .then(response => {
+        setCourseDetails(response.data.data);
+    })
+    .catch(error => {
+        console.error('There was an error!', error);
+    });
   }, [id]);
  
   const students = [
@@ -65,10 +74,10 @@ const MarkAttendanceList = () => {
   return (
     <div>
         <div className="text-3xl font-bold course-info">
-          <h2 className='text-course-info'>Course Code: CS101</h2>
-          <h2 className='text-course-info'>Academic Year: 2021-2022</h2>
+          <h2 className='text-course-info'>Course Code: {courseDetails.code}</h2>
+          <h2 className='text-course-info'>Academic Year: {courseDetails.academic_year}</h2>
           <h2 className='text-course-info'>Lecturer: Mr. Some Guy</h2>
-          <h2 className='text-course-info'>Credits: {id}</h2>
+          <h2 className='text-course-info'>Credits: {courseDetails.credits}</h2>
           <h2 className='text-course-info'>Lecture Started At: {lectureDetails.start_time}</h2>
           <h2 className='text-course-info'>Lecture Duration: {lectureDetails.duration}</h2>
           <h2 className='text-course-info'>Now: {timeNow}</h2>
