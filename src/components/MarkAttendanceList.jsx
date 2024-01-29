@@ -67,7 +67,7 @@ const MarkAttendanceList = () => {
             <h2 className='text-course-info'>Course Code: CS101</h2>
             <h2 className='text-course-info'>Academic Year: 2021-2022</h2>
             <h2 className='text-course-info'>Lecturer: Mr. Some Guy</h2>
-            <h2 className='text-course-info'>Credits: {id}</h2>
+            <h2 className='text-course-info'>Credits: </h2>
             <h2 className='text-course-info'>Lecture Started At: {startTime}</h2>
             <h2 className='text-course-info'>Lecture Duration: {duration}</h2>
             <h2 className='text-course-info'>Now: {timeNow}</h2>
