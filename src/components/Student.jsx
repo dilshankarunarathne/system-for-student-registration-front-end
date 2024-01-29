@@ -66,7 +66,7 @@ const Student = () => {
         <div className="text-3xl font-bold student-info">
             <h2 className='text-course-info'>Name: {studentInfo.name}</h2>
             <h2 className='text-course-info'>Registration Number : {studentInfo.reg_no}</h2>
-            <h2 className='text-course-info'>Academic Year: 2021-2022</h2>
+            <h2 className='text-course-info'>Academic Year: {studentInfo.academic_year}</h2>
             <h2 className='text-course-info'>GPA: {id}</h2>
         </div>
 
