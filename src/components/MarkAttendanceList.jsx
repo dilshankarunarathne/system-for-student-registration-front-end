@@ -11,12 +11,14 @@ import './MarkAttendanceList.css';
 
 const MarkAttendanceList = () => {
   const navigate = useNavigate();
-  // eslint-disable-next-line no-unused-vars
-  const { id, type } = useParams();
-  const { isLoggedIn } = useContext(AuthContext);
+    // eslint-disable-next-line no-unused-vars
+    const { id, type } = useParams();
+    const { isLoggedIn } = useContext(AuthContext);
 
-  const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
-  const [lectureDetails, setLectureDetails] = useState({ start_time: '', duration: '' });
+    const [timeNow, setTimeNow] = useState(new Date().toLocaleTimeString());
+    const [lectureDetails, setLectureDetails] = useState({ start_time: '', duration: '' });
+    const [courseDetails, setCourseDetails] = useState({ code: '', academic_year: '', credits: '' });
+
 
   useEffect(() => {
       const timer = setInterval(() => {
