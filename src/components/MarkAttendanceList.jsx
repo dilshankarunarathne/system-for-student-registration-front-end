@@ -78,6 +78,7 @@ const MarkAttendanceList = () => {
   return (
     <div>
         <div className="text-3xl font-bold course-info">
+          <h2 className='text-course-info'>{type === 'start' ? 'Class Start Attendance' : 'Class End Attendance'}</h2>
           <h2 className='text-course-info'>Course Code: {courseDetails.code}</h2>
           <h2 className='text-course-info'>Academic Year: {courseDetails.academic_year}</h2>
           <h2 className='text-course-info'>Lecturer: {lecturerDetails.name}</h2>
