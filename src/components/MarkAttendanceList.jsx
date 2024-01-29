@@ -58,7 +58,6 @@ const MarkAttendanceList = () => {
 
   const handleFinishMarking = () => {
     // TODO Do any cleanup or finalization tasks here
-    // Navigate to a different route
     navigate('/course/{id}');
   };
 
