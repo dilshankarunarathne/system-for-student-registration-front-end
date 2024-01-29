@@ -30,10 +30,10 @@ const Course = () => {
   return (
     <div>
         <div className="text-3xl font-bold course-info">
-            <h2 className='text-course-info'>Course Code: CS101</h2>
-            <h2 className='text-course-info'>Academic Year: 2021-2022</h2>
+            <h2 className='text-course-info'>Course Code: {course.code}</h2>
+            <h2 className='text-course-info'>Academic Year: {course.academic_year}</h2>
             <h2 className='text-course-info'>Lecturer: Mr. Some Guy</h2>
-            <h2 className='text-course-info'>Credits: {id}</h2>
+            <h2 className='text-course-info'>Credits: {course.credits}</h2>
         </div>
 
         <div className='flex flex-wrap justify-center items-start student-tiles'>
