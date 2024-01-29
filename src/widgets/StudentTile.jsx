@@ -15,7 +15,7 @@ function StudentTile({ id }) {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch('http://127.0.0.1:8000/api/course/get-all', {
-                method: 'POST',
+                method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${OAUTH_TOKEN}`,
                     'Content-Type': 'application/json',
